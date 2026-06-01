@@ -15,7 +15,9 @@
     <meta
       property="og:image"
       content="https://links.ignaciofigueroa.dev/assets/og-image.png" />
-    <meta property="og:url" content="https://links.ignaciofigueroa.dev/en.html" />
+    <meta
+      property="og:url"
+      content="https://links.ignaciofigueroa.dev/en.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -218,16 +220,6 @@
         <p class="footer__subtext">Crafted with pure HTML & CSS</p>
       </footer>
     </main>
-    <script>
-      let avatarClicks = 0;
-      const avatar = document.querySelector('.profile__avatar');
-      avatar.addEventListener('click', () => {
-        avatarClicks++;
-        avatar.style.transform = `scale(${1 + avatarClicks * 0.05})`;
-        if (avatarClicks >= 5) {
-          window.location.href = './secret.html';
-        }
-      });
-    </script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
